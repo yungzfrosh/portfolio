@@ -1,0 +1,226 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+}
+
+.about_image {
+    border: 12px solid blue;
+    margin-top: 15rem;
+    height: 32rem;
+    width: 32rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
+
+.about_image:hover {
+    border: 12px solid green;
+}
+
+.page-scroll:hover {
+    background-color: white;
+    border-radius: 50%;
+    padding: 1rem;
+    font-size: 1.5rem;
+    color: black;
+}
+
+img {
+    margin-top: -12rem;
+    margin-left: 2rem;
+    height: 45rem;
+    animation: slideleft 2s ease-in;
+}
+
+.sub_title {
+    margin-top: 5rem;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: blue;
+}
+
+.sub_title:hover {
+    color: green;
+}
+
+.main_title {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+.about_content {
+    margin-right: 5rem;
+}
+
+p {
+    margin-bottom: 2rem;
+    animation: slideright 2s ease-in;
+}
+
+.skill_item .skill_header {
+    position: relative;
+}
+
+.skill_item .skill_header .skill_title {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.about_skills {
+    animation: slideright 2s ease-in;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    color: #293651;
+    margin: 0px;
+}
+
+h5,
+h3 {
+    animation: slidetop 2s ease-in;
+}
+
+h3:hover {
+    color: green;
+}
+
+p:hover {
+    font-size: 1.2rem;
+}
+
+.skill_item .skill_header .skill_percentage {
+    position: absolute;
+    top: -3px;
+    right: 0;
+}
+
+.skill_item .skill_bar {
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.skill_item .bar_inner {
+    width: 100%;
+    height: 9px;
+    border-radius: 5px;
+    background-color: rgba(100, 111, 135, 0.11);
+    position: relative;
+}
+
+.progress_line {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 9px;
+    border-radius: 5px;
+    background-color: blue;
+    width: 0;
+}
+
+.skill_item .skill_bar .bar_inner .progress_line:hover {
+    background-color: green;
+}
+
+.skill_item .skill_bar .bar_inner .progress_line::before {
+    position: absolute;
+    content: '';
+    width: 7px;
+    height: 18px;
+    background-color: wheat;
+    border: 2px solid #00A78E;
+    border-radius: 5px;
+    top: -6px;
+    right: 0;
+}
+
+.heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 0rem;
+    padding: 0 2rem;
+    background-color: blue;
+    color: WHITE;
+    position: fixed;
+    width: 100%;
+    height: 5rem;
+    animation: slidetop 2s ease-in;
+}
+
+.heading:hover {
+    background-color: green;
+}
+
+.nav-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: WHITE;
+    gap: 5rem;
+    margin-left: 50rem;
+    text-decoration: none;
+}
+
+.imga {
+    margin-top: .2rem;
+    margin-left: 2rem;
+    height: 5rem;
+    width: 5rem;
+}
+
+a {
+    text-align: -webkit-match-parent;
+    text-decoration: none;
+    color: white;
+}
+
+.section_title {
+    margin-top: 10rem;
+}
+
+@keyframes slideleft {
+    0% {
+        transform: translateX(-100%)
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideright {
+    0% {
+        transform: translateX(100%)
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slidetop {
+    0% {
+        transform: translateY(-100%)
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slidebottom {
+    0% {
+        transform: translateY(100%)
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
